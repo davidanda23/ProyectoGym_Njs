@@ -1,0 +1,98 @@
+<article>
+  <div class="spinner-border" role="status" *ngIf="this.bandera">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <h1 class="mt-4">Entrenadores</h1>
+  <div class="card-columns">
+    <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+      <img class="card-img-top" src="../../assets/rock2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title">The Rock</h1>
+        <h3>Clases de Pesas</h3>
+
+
+        <p class="card-text">
+          <span (click)="entregarQRCode(1)" class="btn btn-primary">Twitter</span>
+        </p>
+        <p>
+          <span (click)="entregarQRCode(2)" class="btn btn-primary">YouTube</span>
+        </p>
+        <p>
+          <span (click)="entregarQRCode(3)" class="btn btn-primary">FaceBook</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+      <img class="card-img-top" src="../../../assets/adonis.png" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title">Adonis Creed</h1>
+        <h3>Clases de Boxeo</h3>
+
+        <!--<a (click)="entregarQRCode(1)" class="btn btn-primary">Consigue su youtube!</a>-->
+        <p class="card-text">
+          <span (click)="entregarQRCode(4)" class="btn btn-primary">Twitter</span>
+        </p>
+        <p>
+          <span (click)="entregarQRCode(5)" class="btn btn-primary">YouTube</span>
+        </p>
+        <p>
+          <span (click)="entregarQRCode(6)" class="btn btn-primary">FaceBook</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+      <img class="card-img-top" src="../../assets/rich2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h1 class="card-title">Rich Froning</h1>
+        <h3>Clases de Crossfit</h3>
+
+        <!--<a (click)="entregarQRCode(1)" class="btn btn-primary">Consigue su youtube!</a>-->
+        <p class="card-text">
+          <span (click)="entregarQRCode(4)" class="btn btn-primary">Twitter</span>
+        </p>
+        <p>
+          <span (click)="entregarQRCode(5)" class="btn btn-primary">YouTube</span>
+        </p>
+        <p>
+          <span (click)="entregarQRCode(6)" class="btn btn-primary">FaceBook</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div>
+    <h1>
+      Escanea el codigo QR para ir a la página
+    </h1>
+
+    <ngx-qrcode [elementType]="elementType" [value]="value" cssClass="aclass" errorCorrectionLevel="L">
+    </ngx-qrcode>
+  </div>
+  <div class="container mt-5">
+    <h2>Formulario de contacto</h2>
+    <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" name="nombre" ngModel>
+      </div>
+      <div class="form-group">
+        <label>Asunto</label>
+        <input type="text" class="form-control" name="asunto" ngModel>
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" class="form-control" name="email" ngModel>
+      </div>
+      <div class="form-group">
+        <label>Mensaje</label>
+        <textarea class="form-control" cols="30" rows="6" name="mensaje" ngModel></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+    </form>
+  </div>
+</article>
+

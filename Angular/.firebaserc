@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "proyectogym-58d3f": {
+      "hosting": {
+        "login": [
+          "proyectogym-58d3f"
+        ]
+      }
+    }
+  }
+}

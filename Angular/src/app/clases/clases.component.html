@@ -1,0 +1,75 @@
+<article>
+    <div class="spinner-border" role="status" *ngIf="this.bandera">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="card-columns">
+        <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+            <div class="card-header">Clases de Box</div>
+            <div class="card-body">
+                <img class="card-img-top" src="../../assets/clasesdebox.jpg" alt="">
+                <h2 class="card-title">
+                    <span class="badge badge-pill badge-primary">De 7 am a 4 pm</span>
+                </h2>
+                <p class="card-text">
+                    <span class="badge badge-pill badge-primary">Entrenador: Ivan Drago</span>
+                    <span class="badge badge-pill badge-primary">Inscritos 18 de 25</span>
+                    <!-- Agregar metodo onclick -->
+                    <span class="badge badge-pill badge-primary">Pulsa aquí para Inscribirse</span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+            <div class="card-header">Clases de Crossfit</div>
+            <div class="card-body">
+                <img class="card-img-top" src="../../assets/crossfit.jpg" alt="">
+                <h2 class="card-title">
+                    <span class="badge badge-pill badge-primary">De 8 am - 12pm </span>
+                </h2>
+
+                <p class="card-text">
+                    <span class="badge badge-pill badge-primary">Entrenador: LeBron James</span>
+                    <span class="badge badge-pill badge-primary">Inscritos: 23 de 30</span>
+                    <!-- Agregar metodo onclick -->
+                    <span class="badge badge-pill badge-primary">Pulsa aquí para Inscribirse</span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+            <div class="card-header">Clases de Pesas</div>
+            <div class="card-body">
+                <img class="card-img-top" src="../../assets/fisicoculturismo.jpg" alt="">
+                <h2 class="card-title">
+                    <span class="badge badge-pill badge-primary">De 10 am a 2 pm</span>
+                </h2>
+
+                <p class="card-text">
+                    <span class="badge badge-pill badge-primary">Entrenador: Arnold S.</span>
+                    <span class="badge badge-pill badge-primary">Inscritos 33 de 45</span>
+                    <!-- Agregar metodo onclick -->
+                    <span class="badge badge-pill badge-primary">Pulsa aquí para Inscribirse</span>
+                </p>
+            </div>
+        </div>
+        <div class="card border-secondary mb-3 mt-4" style="max-width: 20rem;">
+            <div class="card-header">Clases de Spinning</div>
+            <div class="card-body">
+                <img class="card-img-top" src="../../assets/clases.jpg" alt="">
+                <h2 class="card-title">
+                    <span class="badge badge-pill badge-primary">12 pm a 6 pm</span>
+                </h2>
+
+                <p class="card-text">
+                    <span class="badge badge-pill badge-primary">Entrenador: Ivan Drago</span>
+                    <span class="badge badge-pill badge-primary">Inscritos 60 de 60</span>
+                    <!-- Agregar metodo onclick -->
+                    <span class="badge badge-pill badge-primary">Pulsa aquí para inscribirse</span>
+                </p>
+            </div>
+            
+        </div>
+        <div class="text-center">
+            <button type="button" (click)="getResultado()" class="btn btn-primary btn-block">Haz click aqui</button>
+            <p>{{mensaje.valor}}</p>
+          </div>
+    </div>
+</article>
